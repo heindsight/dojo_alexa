@@ -1,5 +1,7 @@
 import speech_recognition as sr
 
+import webbrowser
+
 
 def get_audio(recogniser):
     with sr.Microphone() as src:
@@ -19,6 +21,7 @@ def main():
     query = get_text()
 
     print("You said:", query)
+    webbrowser.open('https://unsplash.com/search/photos/%s' % query[, new=0[, autoraise=True]])
 
 
 if __name__ == '__main__':
