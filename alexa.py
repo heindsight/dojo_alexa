@@ -20,8 +20,8 @@ def get_text():
 def main():
     query = get_text()
 
-    print("You said:", query)
-    webbrowser.open('https://unsplash.com/search/photos/%s' % query[, new=0[, autoraise=True]])
+    print("You said:", query or 'truck')
+    webbrowser.open('https://unsplash.com/search/photos/%s' % query, new=0, autoraise=True)
 
 
 if __name__ == '__main__':
